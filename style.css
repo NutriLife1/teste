@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+}
+header{
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+nav{
+    margin-top: 2%;
+    margin-left: 5%;
+    display: flex;
+
+}
+ul{
+    margin-left: 10%;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+li a{
+    margin-left: 55px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #0a5e23;
+    border:  none;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+.abrir img{
+    width: 50px;
+    border-radius: 50px;
+    position: absolute;
+    top: 10px;
+}
+.fechar{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 3rem;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.abrir{
+    display: block;
+    color: #ffffff;
+    font-size: 40px;
+    margin-left: 75%;
+    top: 0px;
+    position: absolute;
+}
+.mobile{
+    display: block;
+    background-color: #0a4d28;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    transition: .3s;
+}
+.mobile.open{
+    width: 30%;
+}
+.mobile.open ~ .base{
+    display: block;
+}
+.mobile .fecha {
+    color: #ffffff;
+    height: 28px;
+    font-size: 40px;
+}
+.mobile .fechar ion-icon:hover{
+    border-radius: 50%;
+    background-color: rgb(10, 94, 45);
+}
+.mobile nav ul{
+    display: inline;
+    list-style: none;
+}
+.mobile nav ul li{
+    padding: 50px;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+.mobile nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: block;
+}
+.mobile li a:hover{
+    background-color: rgb(46, 233, 171);
+}
+.base{
+    background-color: rgba(0, 0, 0, 0.596);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+.linmg{
+    display:flex;
+}
+.linha{
+    margin: 2%;
+    width: 50%;
+    height: 1%;
+    border: 2px solid #0a5e23;
+    background-color: #0a5e23;
+}
+.logo img{
+    width: 50%;
+   margin-left: 30%;
+}
+img{
+    margin: 2% 5%;
+    width: 90%;
+}
+.botoes #objetivo{
+    margin: 3% 18%;
+    padding: 10px 25px;
+}
+.botoes #anota{
+    margin: 3% 1%;
+    padding: 10px 25px;
+}
+.botoes #imc{
+    padding: 10px 20px;
+    position: absolute;
+    margin: 3% 17%;
+}
+.botoes button{
+    background-color: #0a5e23;
+    border: none;
+    border-radius: 5px;
+}
+.botoes button a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.acess{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.acesso{
+    margin-left: 17%;
+    background-color: #0a5e23;
+    border: none;
+    border-radius: 5px;
+    padding: 30px 40px;
+}
+.acesso ion-icon{
+    font-size: 2rem;
+}
+.acesso .lin{
+    margin: 2%;
+    width: 60%;
+    height: auto;
+    border: 0.65px solid #ffffff;
+    background-color: #0a5e23;
+}
+.fundo{
+    z-index: -1;
+    position: absolute;
+    top: 85%;
+    width: 100%;
+    height: 100px;
+    background-image: url(img/fundo\ nutrilife.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+}
